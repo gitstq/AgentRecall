@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentrecall"
+version = "1.0.0"
+description = "🧠 Lightweight AI Coding Agent Persistent Memory Engine CLI"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "AgentRecall Team"}
+]
+keywords = ["ai", "agent", "memory", "cli", "coding", "persistent", "context"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+
+[project.scripts]
+recall = "agentrecall.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/gitstq/AgentRecall"
+Issues = "https://github.com/gitstq/AgentRecall/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
